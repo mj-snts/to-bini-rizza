@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear. Myrell Kaye Mallari</strong>
+                        <p>
+                        On this day of love, I find myself wanting to remind you of just how incredible you truly are.
+                         I know the weight of the world sometimes feels heavy on your shoulders, and your career might not be unfolding the way you imagined.
+                          But please hear this, you are stronger and more capable than you realize. I can see it. I believe in you more than words can express, and I’ll be here cheering you on, every single day.
+                         <img src="./love.gif" alt="">
+                        </p>
+                        
+                           
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
